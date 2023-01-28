@@ -45,10 +45,24 @@ console.log(str)
 // }
 
 for (let i = 1; i <= 20; i++) {
-    if (i % 3 === 0) {
-        console.log("FrontEnd")
+    
+    if (i % 3 === 0 && i % 5 ===0) {
+        console.log(`${i} -> Frontend Simplified`)
     }
-    console.log(i)
+    else if (i % 3 === 0) {
+        console.log(`${i} -> FrontEnd`)
+    }
+    else if (i % 5 === 0) {
+        console.log(`${i} -> Simplified`)
+    }
+    else {
+        console.log(`${i} -> ${i}`)
+    }
 }
 
-i % 3 && i % 5
+
+const fes = "FrontEnd Simplified";
+
+for (i = 0; i < fes.length; i++) {
+    console.log(fes[i])
+}
