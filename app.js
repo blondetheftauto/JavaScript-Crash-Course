@@ -176,3 +176,6 @@ for (let ix = 0; ix < dollars.length; ix++) {
 }
 
 console.log(cents)
+
+//Objects
+
