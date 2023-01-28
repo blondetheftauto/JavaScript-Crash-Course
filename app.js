@@ -119,3 +119,60 @@ let newArr = arr.filter((element) => {
 })
 
 console.log(newArr)
+
+
+//newArr is same as newArr2
+
+let newArr2 = arr.filter(element => element < 50)
+
+console.log(newArr2)
+
+//examples
+
+let grades = ['A+', 'A', 'FAIL']
+
+//WITH ARRAY FILTER
+
+// grades.push('FAIL', 'FAIL', 'B')
+// grades.push('FAIL')
+
+// let noFails = grades.filter (element => element !== 'FAIL')
+// console.log(noFails)
+
+//WITHOUT ARRAY FILTER
+
+let goodGrades = []
+
+for (let i = 0; i < grades.length; i++) {
+    if (grades[i] !== 'FAIL') {
+        goodGrades.push(grades[i])
+    }
+}
+console.log(goodGrades)
+
+//MAP function
+
+let arrmap = [1, 4, 9, 16]
+
+let newArrMap = arrmap.map((element) => {
+    console.log(element)
+    return undefined;
+})
+
+console.log(newArrMap)
+
+//example
+
+let dollars = [1, 5, 10, 3]
+
+// let cents = dollars.map((element) => element * 100)
+
+// console.log(cents)
+
+let cents = []
+
+for (let ix = 0; ix < dollars.length; ix++) {
+    cents.push(dollars[ix] * 100)
+}
+
+console.log(cents)
