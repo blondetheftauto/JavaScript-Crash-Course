@@ -66,3 +66,56 @@ const fes = "FrontEnd Simplified";
 for (i = 0; i < fes.length; i++) {
     console.log(fes[i])
 }
+
+// FUNCTIONS
+
+//function definition
+function welcomePersonToFES (firstName, lastName) {
+    console.log(`Welcome to FES, ${firstName} ${lastName}!`)
+}
+
+//call the function
+welcomePersonToFES('David', 'Bragg');
+welcomePersonToFES('Mitri', 'Doe');
+welcomePersonToFES('Taylor', 'Brewster');
+
+function sumOfTwoNumbers(firstNum, secondNum) {
+    return firstNum + secondNum
+    console.log('this wont run due to return')
+}
+
+console.log(sumOfTwoNumbers(10, 10))
+
+
+//Example
+
+function convertCelsiusToFahrenheit (celsius) {
+    let fahrenheit = celsius * 1.8 + 32
+    return fahrenheit
+}
+
+console.log(convertCelsiusToFahrenheit(0))
+console.log(convertCelsiusToFahrenheit(10))
+console.log(convertCelsiusToFahrenheit(30))
+
+//Arrays
+
+let arr = [20, 30, 40, 50, 100]
+
+//first element of array:
+console.log(arr[0])
+
+//last element of array:
+console.log(arr[arr.length - 1])
+
+//add element to array
+arr.push(200)
+
+let newArr = arr.filter((element) => {
+    console.log(element)
+    if (element < 50) {
+        return true;
+    }
+})
+
+console.log(newArr)
