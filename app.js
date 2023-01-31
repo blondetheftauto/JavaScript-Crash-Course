@@ -223,3 +223,30 @@ register({
 
 
 console.log(users);
+
+
+// DOM
+
+//first way of accessing an element
+console.log(document.querySelector('#title'));
+
+//second way of accessing an element
+
+console.log(document.getElementById('title'))
+
+//changing HTML
+
+document.querySelector('#title').innerHTML += ' Frontend Simplified'
+
+//chaning CSS
+document.querySelector('#title').style.color = 'blue'
+
+//exercise
+
+// function changeTitleToRed () {
+//     document.querySelector('#title').style.color = 'red'
+// }
+
+function toggleDarkMode () {
+    document.querySelector('body').classList.toggle('dark-theme');
+}
